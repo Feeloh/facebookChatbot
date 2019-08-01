@@ -38,8 +38,8 @@ app.get('/submit_form', function(request, response) {
 
 // data obtained from the form are obtained from url and 
 app.post('/submit_form_with_get', function(request, response) {
-  const botId = process.env.CHATFUEL_BOT_ID;
-  const chatfuelToken = process.env.CHATFUEL_TOKEN;
+  const botId = '5d42b78531df8b000133b003';
+  const chatfuelToken = 'mELtlMAHYqR0BvgEiMq8zVek3uYUK3OJMbtyrdNPTrQB9ndV0fM7lWTFZbM4MZvD';
   
   const {userId , blockName} = request.body;
   
