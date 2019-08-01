@@ -82,7 +82,7 @@ app.get('/show-buttons', (request, response) => {
   const {userId, blockName} = request.query;
   
 //   link to the webview
-  const displayUrl = `http://branch-spring.glitch.me/submit_form?userId=${userId}&blockName=${blockName}`;
+  const displayUrl = `http://glitchapp.azurewebsites.net/submit_form?userId=${userId}&blockName=${blockName}`;
 
   response.json({
     messages:[
