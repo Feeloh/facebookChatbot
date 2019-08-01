@@ -1,11 +1,3 @@
-// const express = require('express')
-// const app = express()
-// const port = 3000
-
-// app.get('/', (req, res)=>res.send('Hello World!'))
-
-// app.listen(port, () => console.log(`Example app listening on port ${port}`))
-
 // init project
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -82,7 +74,7 @@ app.get('/show-buttons', (request, response) => {
   const {userId, blockName} = request.query;
   
 //   link to the webview
-  const displayUrl = `https://branch-spring.glitch.me/submit_form?userId=${userId}&blockName=${blockName}`;
+  const displayUrl = `http://glitchapp.azurewebsites.net/submit_form?userId=${userId}&blockName=${blockName}`;
 
   response.json({
     messages:[
