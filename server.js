@@ -82,7 +82,7 @@ app.get('/show-buttons', (request, response) => {
   const {userId, blockName} = request.query;
   
 //   link to the webview
-  const displayUrl = `http://glitchapp.azurewebsites.net/submit_form?userId=${userId}&blockName=${blockName}`;
+  const displayUrl = `https://glitchapp.azurewebsites.net/submit_form?userId=${userId}&blockName=${blockName}`;
 
   response.json({
     messages:[
